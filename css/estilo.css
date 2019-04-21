@@ -1,0 +1,888 @@
+/* BASICOS */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+p {
+  margin-bottom: 1.6em;
+}
+
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+
+
+/* HEADER */
+
+.header {
+  background: #0f2e40;
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 3px solid brown;
+  font-size: 1.3rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  letter-spacing: 4px;
+  font-size: 1.5em;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+.navigation ul li .submenu {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  background: #0f2e40;
+  color: white;
+  left: 0;
+  width: 130%;
+  transition: all 1s;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  font-size: 1em;
+   transition: all 0.4s ease;
+   color: white;
+}
+
+.navigation ul li a:hover {
+  color: brown;
+
+}
+.navigation ul li:hover .submenu {
+  height: 100px;
+  padding:0;
+  border-bottom: 2px solid brown;
+  border-left: 2px solid brown;
+  border-right: 2px solid brown;
+}
+
+
+/* MAIN */
+.main {
+  padding-top: 5rem;
+}
+
+
+
+/* TOUR MAIN */
+
+#tour {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#tour img {
+  width: 100%;
+  max-height: 76vh;
+}
+.ticketdiv {
+ text-align: center;
+
+}
+.ticketsmain {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 200%;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  padding: 0.8%;
+  transition: all 0.5 linear;
+  border-radius: 30px;
+  animation-name: cambiar_color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+.ticketsmain:hover {
+  color: brown;
+  background-color: #d4d4d4a6;
+  transition: all 0.4s linear;
+  
+  }
+
+
+  /* animacion */
+  @keyframes cambiar_color {
+    0% {color: #333;}
+   15% {color: rgb(121, 77, 241);}
+   25% {color: rgb(102, 153, 211);}
+   35% {color: darkmagenta}
+   50% {color: #bcbe35;}
+   75% {color: rgb(211, 25, 25);}
+   100%{color: #333;}
+
+}
+
+
+
+
+/* MUSICA MAIN */
+
+#music {
+  background-image: url('../img/tour-bg.png');
+  background-attachment: inherit;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 0.3% 4%;
+}
+
+#music h2 {
+  color: #333;
+  font-size: 3rem;
+  line-height: 1.4em;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+}
+
+.musicpic {
+ 
+  text-align: center;
+  float: left;
+  width: 55%;
+  position: relative;
+}
+
+.divDelArticle {
+  display: flex;
+  
+}
+
+.musicpic img{
+  width: 50%;
+}
+
+.musicaadiv {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  
+}
+
+.musicaa {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  padding: 15px 5px; 
+  transition: all 0.4s linear;
+  animation-name: cambiar_color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  border-radius: 30px;
+  
+}
+
+.musicaa:hover {
+color: brown;
+background-color: #9ea5aa;
+
+
+}
+
+#spotylist {
+  display: inline-block;
+}
+
+/* DISCOGRAFIA */
+
+.discografia {
+  /* clear: both; */
+  padding-top: 5%;
+  width: 100%;
+  height: auto;
+}
+
+.discografia h2 {
+  text-align: center;
+  
+}
+
+.disccontain {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+}  
+.maincontainer {
+  perspective: 1000px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  list-style: none;
+  margin: 1%;
+  display: flex;
+  z-index: 1;
+
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.5s ease;
+  
+  
+}
+
+.front img {
+  width:100%;
+  height: 100%;
+  
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #f3f3f1;
+  color: #333;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.back {
+  transform: rotateY(180deg);
+  
+}
+
+.backconta {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: brown;
+  text-align: center;
+  padding-top: 6rem;
+  
+}
+.back ul {
+ 
+  padding-top: 10%;
+}
+.back ul li {
+  list-style: none;
+  display: inline-block;
+}
+.sm {
+  padding: 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  transition: 0.4s;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+
+/* BIOGRAFIA MAIN */
+
+.biosec {
+  background-image: url('../img/kanebiomain.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+
+#about {
+  margin: 3% 0;
+  padding: 50px;
+  height: auto;
+  width: 100%;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+.biosec h2 {
+  color: black;
+  font-size: 3rem;
+  line-height: 1.4em;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 2%;
+  padding: 1% ;
+  text-align: center;
+}
+
+#about div a {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 15px;
+  margin: 15px;
+  background: #d5d7d8;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  min-width: 15%;
+}
+
+
+#about div a:hover {
+color: brown;
+background-color: #d4d4d4a6;
+border: solid 2px whitesmoke;
+transition: all 0.4s linear;
+border-radius: 35px;
+}
+
+.biop {
+  position: top;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 180%;
+  font-size: 1.2rem;
+  text-align: left;
+  color: black;
+  margin-bottom: 2em;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.329);
+  text-indent: 3em;
+  width: 80%;
+  
+}
+
+
+/* VIDEOS MAIN */
+#Video {
+  padding-top: 50px;
+  background: black;
+  background-image: url("../img/music.png");
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 7%;
+  background-position-y: 6rem;
+  
+  
+}
+#Video h2 {
+  color: white;
+  font-size: 3rem;
+  line-height: 1.4em;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
+
+#Video ul {
+  margin: 0.5% 2%;
+}
+
+#Video ul .primero iframe {
+  width: 100%;
+  height: 70vh;
+}
+
+#Video ul .primero {
+  width: 80%;
+  margin-left: 9%;
+}
+
+#Video ul li {
+  display: inline-block;
+  width: 30%;
+}
+
+#Video ul li iframe {
+  width: 100%;
+  margin: 2%;
+}
+
+.minivideos {
+  margin-left: 8%;
+}
+
+
+
+/* ESTILOS SECTION GALERIA MAIN */
+
+.gall div {
+  margin: 1%;
+  text-align: center;
+}
+
+.gall div ul li {
+  display: inline-block;
+  width: 20%;
+  
+}
+
+.gall div ul li img {
+  width: 100%;
+  margin: 1%;
+  border: 2px solid whitesmoke;
+}
+
+.gall {
+  padding: 2rem 2rem;
+  background-image: url("./../img/fondogalmain.png");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+}
+
+.gall h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+  margin: 2rem;
+  padding: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.galdiva {
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.galmaina {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Noto Sans';
+  line-height: 200%;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin: 1em;
+  padding: 1em;
+  width: auto;
+}
+
+.galmaina:hover {
+  color: brown;
+background-color: #d4d4d4a6;
+transition: all 0.4s linear;
+border: 2px solid #d4d4d4a6;
+border-radius: 30px;
+width: auto;
+}
+
+
+/* FOOTER */
+
+.footer {
+  background: white;
+  padding: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  
+}
+
+.terms {
+  background: rgb(141, 141, 141);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+}
+
+.terms a:hover {
+  color: brown;
+  transition: all 0.4s linear;
+}
+
+
+.footera {
+ margin-left: 1%;;
+ letter-spacing: 3px;
+ font-size: 2rem;
+ color: white;
+}
+
+.footera:hover {
+  color: brown;
+  transition: all 0.4s linear;
+}
+
+.terms p {
+  display: inline-block;
+}
+
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerli {
+  display: inline-block;
+  padding-left: 10px
+}
+
+.footerli li {
+  display: inline-block;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+}
+
+
+/* formulario */
+.form {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Noto Sans';
+  background: white;
+  font-size: 1.1rem;
+}
+
+fieldset {
+  margin: 3rem;
+  border: 0;
+}
+.contact {
+  width: auto;
+  height: 2rem;
+  margin: 1%;
+  font-weight: 700;
+  text-align: top;
+  border: 0;
+  font-size: 1.2rem;
+}
+
+.nombre,.email,.subject {
+  width: 18%;
+  height: 2rem;
+  margin: 0.5%;
+  padding: 1%;
+  text-align: top;
+  border: 0;
+  border-bottom: 1.4px black solid;
+  font-size: 1rem;
+}
+
+select {
+  background: transparent;
+  font-size: 1rem;
+  height: 2rem;
+  padding: 5px;
+  width: auto;
+}
+
+.select {
+  margin-bottom: 1rem;
+}
+
+.send, .reset {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  height: 2rem;
+  padding: 5px;
+  width: 8%;
+  margin: 0.5%;
+}
+
+
+/* /* socialbar */
+
+.social-bar {
+	position: fixed;
+	left: 0;
+	top: 30%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 1;
+} 
+
+
+ .social-bar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+} 
+
+ .icon {
+	color: white;
+	text-decoration: none;
+	padding: .5rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-youtube {
+	background: #E83028;
+}
+
+.icon-instagram {
+	background: #b6384f;
+}
+
+.icon:first-child {
+	border-radius: 0 1rem 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 1rem 0;
+}
+
+.icon:hover {
+	padding-left: 3rem;
+	border-radius: 0 1rem 1rem 0;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+	
+} 
+
+
+
+/* CONTACT HTML */
+
+.bodyc {
+  background-image: url('../img/contact2.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 30%;
+  background-position-x: 2%;
+  width: 100%;
+  height: auto;
+}
+
+.formc {
+  padding:5%;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Noto Sans';
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+.contact {
+  font-size: 2rem;
+}
+
+/* GALERIA HTML */
+.galul li {
+  display: inline-block;
+  width: 23%;
+}
+.galul li img {
+  width: 100%;
+  height: auto;
+}
+.galdiv {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.footergal {
+  background: rgb(141, 141, 141);
+  color: white;
+  padding: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+}
+
+.galla {
+  text-align: center;
+  margin: 2%;
+}
+.gala {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Noto Sans";
+  color: #333;
+  font-size: 1.2rem;
+  word-spacing: 0.2rem;
+  margin: 1.5rem;
+  text-decoration: none;
+  padding: 1rem;
+  transition: all 0.5s linear;
+}
+
+.gala:hover {
+  background-color: rgba(226, 216, 216, 0.582);
+  border: 2px solid black;
+  border-radius: 30px;
+  color: brown;
+}
+
+
+/* ESTILOS BIO.HTML */
+
+
+
+
+.h2bio1 {
+  color: black;
+  text-align: center;
+  
+  padding-top: 1%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Noto Sans";
+  font-size: 2rem;
+}
+
+.h2bio {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Noto Sans";
+  font-size: 1.4rem;
+  padding-top: 1%;
+}
+
+.biop {
+  text-align: justify;
+  margin-bottom: 0.3%;
+  padding-bottom: 1rem;
+}
+
+
+
+.biobtndiv {
+  text-align: center;
+  margin: 2%;
+  position: relative;
+  
+}
+.biobtna {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Noto Sans";
+  color: #333;
+  font-size: 1.2rem;
+  word-spacing: 0.3rem;
+  margin: 0.8rem;
+  text-decoration: none;
+  padding: 1rem;
+  transition: all 0.5s linear;
+}
+
+.biobtna:hover {
+  background-color: rgba(226, 216, 216, 0.582);
+  border: 2px solid black;
+  border-radius: 30px;
+  color: brown;
+}
+
