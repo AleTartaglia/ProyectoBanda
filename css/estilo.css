@@ -169,7 +169,16 @@ p {
    100%{color: #333;}
 
 }
+@keyframes cambiar_color2 {
+  0% {color: white;}
+ 15% {color: #bdc3c7;}
+ 25% {color: #27ae60;}
+ 35% {color: #34495e;}
+ 50% {color: #2c3e50;}
+ 75% {color: #1abc9c;}
+ 100%{color: white;}
 
+}
 
 
 
@@ -752,7 +761,27 @@ select {
 	
 } 
 
-
+.gotopbtn {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 100px;
+  right: 28px;
+  background:#9b2e2e7a;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  font-size: 22px;
+  border-radius: 15px;
+ 
+}
+.gotopbtn:hover {
+  transition: all 0.4s linear;
+  background:#9b2e2efd;
+  border:2px solid #0f2e40;
+  box-sizing: content-box;
+}
 
 /* CONTACT HTML */
 
@@ -808,7 +837,7 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
 .footergal {
   background: rgb(141, 141, 141);
   color: white;
-  padding: 1rem;
+  padding: 0.6rem;
   padding-bottom: 0;
   text-align: center;
   font-size: 0.8rem;
