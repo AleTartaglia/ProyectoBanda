@@ -60,9 +60,9 @@ p {
   margin: auto;
 }
 
-.logo {
-  letter-spacing: 4px;
-  font-size: 1.5em;
+.homenavi img:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.6s linear;
 }
 
 .navigation ul {
@@ -181,10 +181,10 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 3rem;
   margin-top: 3rem;
   width: 100%;
-  padding: 0.3% 4%;
+  padding: 0.3%;
+  padding-bottom: 50px;
 }
 
 #music h2 {
@@ -374,7 +374,7 @@ background-color: #9ea5aa;
 }
 
 #about {
-  margin: 3% 0;
+  margin:0;
   padding: 50px;
   height: auto;
   width: 100%;
@@ -488,6 +488,14 @@ border-radius: 35px;
   margin-left: 8%;
 }
 
+.videodiva {
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: 0;
+    padding: 2rem;
+    position: relative;
+    bottom: 50px;
+  }
 
 
 /* ESTILOS SECTION GALERIA MAIN */
@@ -530,7 +538,9 @@ border-radius: 35px;
 .galdiva {
   text-align: center;
   margin: 2rem;
+  margin-bottom: 0;
   padding: 2rem;
+
 }
 
 .galmaina {
