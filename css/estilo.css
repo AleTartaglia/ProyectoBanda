@@ -210,17 +210,18 @@ p {
  
   text-align: center;
   float: left;
-  width: 55%;
   position: relative;
+  margin-right: 50px;
 }
 
 .divDelArticle {
   display: flex;
-  
+  justify-content: center;
 }
 
 .musicpic img{
-  width: 50%;
+  
+  height: 650px
 }
 
 .musicaadiv {
@@ -228,6 +229,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   position: relative;
 
   
@@ -241,7 +243,7 @@ p {
   text-align: center;
   color: #333;
   text-decoration: none;
-  padding: 15px 5px; 
+  padding: 0 7px; 
   transition: all 0.4s linear;
   animation-name: cambiar_color;
   animation-duration: 3s;
@@ -249,6 +251,9 @@ p {
   animation-timing-function: linear;
   animation-delay: 1s;
   border-radius: 30px;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
   
 }
 
@@ -452,10 +457,10 @@ border-radius: 35px;
   background: black;
   background-image: url("../img/music.png");
   background-attachment: fixed;
-  background-position: right;
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: 7%;
-  background-position-y: 6rem;
+  
   
   
 }
@@ -707,7 +712,7 @@ select {
 .social-bar {
 	position: fixed;
 	left: 0;
-	top: 30%;
+	top: 45vh;
 	font-size: 1.5rem;
 	display: flex;
 	flex-direction: column;
@@ -942,3 +947,127 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
   color: brown;
 }
 
+/* RESPONSIVE DESIGN */
+@media screen and (max-width:768px){
+
+  .logo-nav-container {
+  display: block;
+  margin: 0;
+}
+
+.homenavi img {
+  margin: 2px 5%;
+}
+.navigation ul li {
+  margin: 0 3px;
+  
+  padding: 0;
+  font-size: 15px
+}
+  
+/* FIN HEADER */
+
+/* SOCIAL BAR */
+.social-bar {
+  font-size: 0.8em;
+  top: 50vh;
+}
+/* EMPIEZA MAIN */
+.main {
+  padding-top: 130px;
+}
+/* ----TOUR---- */
+.tour img {}
+.ticketsmain {
+  font-size: 1.3rem;
+}
+
+/* -----MUSIC----- */
+#music {
+  margin-top: 0;
+}
+
+#music h2 {
+  font-size: 2rem;
+}
+.musicpic {
+  display: none;
+}
+
+.musicaadiv iframe{
+  width: 250px;
+  height: 300px;
+}
+.musicaadiv a {
+  font-size: 1.1rem;
+}
+
+.disccontain {
+  display: block;
+}
+.maincontainer {
+  margin:10px auto;
+  width: 200px;
+  height: 200px;
+}
+.back {
+  font-size: 0.7em;
+}
+.backconta {
+padding-top: 3rem;
+font-size: 1em;
+}
+ .sm a {
+   font-size: 1em;
+ }
+/* FIN MUSIC MAIN */
+
+/* ABOUT MAIN */
+.biosec h2 {
+  font-size: 2rem;
+}
+
+#about {
+  padding: 0;
+  margin: auto;
+}
+.biop {
+  height: 60vh;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+/* FIN ABOUT  */
+
+/* EMPIEZA VIDEOS MAIN */
+#Video h2 {
+  font-size: 2rem;
+}
+
+#Video ul .primero {
+display: none;
+ }
+
+#Video ul li {
+  width: 90%;
+}
+
+.videodiva {
+  margin: auto;
+}
+.galmaina {
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* GALLERY MAIN */
+.gall h2 {
+font-size: 2em;
+}
+ .gall div ul li {
+   display: block;
+   width: auto;
+ }
+
+ /* FORM */
+
+}
