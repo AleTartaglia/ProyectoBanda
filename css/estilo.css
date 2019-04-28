@@ -616,7 +616,7 @@ width: auto;
 
 
 .footera {
- margin-left: 1%;;
+ margin-left: 1%;
  letter-spacing: 3px;
  font-size: 2rem;
  color: white;
@@ -947,21 +947,28 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
   color: brown;
 }
 
-/* RESPONSIVE DESIGN */
+/*-------- RESPONSIVE DESIGN---------- */
 @media screen and (max-width:768px){
+
+  .header {
+    text-align: center;
+  }
 
   .logo-nav-container {
   display: block;
+  width: 100%;
   margin: 0;
 }
 
 .homenavi img {
   margin: 2px 5%;
 }
+
 .navigation ul li {
-  margin: 0 3px;
-  
-  padding: 0;
+  margin: 0 0.4rem;
+}
+.navigation ul li a {
+  padding: 0.3rem 0.2rem;
   font-size: 15px
 }
   
@@ -969,15 +976,16 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
 
 /* SOCIAL BAR */
 .social-bar {
-  font-size: 0.8em;
-  top: 50vh;
+  display: none;
 }
 /* EMPIEZA MAIN */
 .main {
   padding-top: 130px;
 }
 /* ----TOUR---- */
-.tour img {}
+#tour div img {
+  width: 100%;
+}
 .ticketsmain {
   font-size: 1.3rem;
 }
@@ -1069,5 +1077,7 @@ font-size: 2em;
  }
 
  /* FORM */
-
+ .form {
+   display: none;
+ }
 }
