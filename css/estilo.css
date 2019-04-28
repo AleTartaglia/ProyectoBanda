@@ -766,7 +766,7 @@ select {
 	
 } 
 
-.gotopbtn {
+.gotopbtn, .gotopbtnbio {
   position: fixed;
   width: 45px;
   height: 45px;
@@ -781,7 +781,7 @@ select {
   border-radius: 15px;
  
 }
-.gotopbtn:hover {
+.gotopbtn, .gotopbtnbio:hover {
   transition: all 0.4s linear;
   background:#9b2e2efd;
   border:2px solid #0f2e40;
@@ -1080,4 +1080,93 @@ font-size: 2em;
  .form {
    display: none;
  }
+
+ /* ------GALERIA HTML */
+
+ .galul {
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .galul li {
+   width: 50%;
+ }
+ .gotopbtn {
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  bottom: 200px;
+  right: 25px;
+  background:#9b2e2e7a;
+  text-decoration: none;
+  text-align: center;
+  line-height: 42px;
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+ 
+}
+/* ------BIOHTML------ */
+ .biosection {
+   background: #fff;
+ }
+
+ .h2bio {
+ font-size: 1.1rem;
+}
+.biophtml {
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 130%;
+  font-size: 0.9rem;
+  color: black;
+  margin: 8px 0.9em;
+  padding: 7px 30px;
+  text-indent: 1em;
+  text-align: justify;
+  
+}
+.gotopbtnbio { 
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 200px;
+  right: 10px;
+  background:#9b2e2e7a;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/* -----CONTACT HTML------ */
+.bodyc {
+  background-size: 25%;
+  background-position-x: 1%;
+  background-position-y: 40%;
+}
+ textarea {
+   width: 90%;
+ }
+fieldset {
+  font-size: 1rem;
+}
+.nombre, .email, .subject, .suscribe, .tyc {
+  font-size: 0.8rem;
+}
+
+ .contact {
+   display: block;
+   font-size: 1.5rem;
+ }
+ .select {
+   font-size: 1rem;
+ }
+ .send, .reset {
+   min-width: 30%;
+   padding: 0;
+ }
+
 }
