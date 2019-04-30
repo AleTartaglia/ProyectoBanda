@@ -11,7 +11,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.4em;
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 h1 {
@@ -29,8 +29,6 @@ p {
   margin: 0 auto;
 }
 
-
-
 /* HEADER */
 
 .header {
@@ -45,7 +43,6 @@ p {
   width: 100%;
   z-index: 2;
 }
-
 
 .header a {
   color: white;
@@ -92,29 +89,25 @@ p {
   display: block;
   padding: 0.5rem 0.5rem;
   font-size: 1em;
-   transition: all 0.4s ease;
-   color: white;
+  transition: all 0.4s ease;
+  color: white;
 }
 
 .navigation ul li a:hover {
   color: brown;
-
 }
 .navigation ul li:hover .submenu {
   height: 100px;
-  padding:0;
+  padding: 0;
   border-bottom: 2px solid brown;
   border-left: 2px solid brown;
   border-right: 2px solid brown;
 }
 
-
 /* MAIN */
 .main {
   padding-top: 5rem;
 }
-
-
 
 /* TOUR MAIN */
 
@@ -128,13 +121,12 @@ p {
   max-height: 76vh;
 }
 .ticketdiv {
- text-align: center;
-
+  text-align: center;
 }
 .ticketsmain {
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   line-height: 200%;
   font-size: 2rem;
   text-align: center;
@@ -154,38 +146,60 @@ p {
   color: brown;
   background-color: #d4d4d4a6;
   transition: all 0.4s linear;
-  
+}
+
+/* animacion */
+@keyframes cambiar_color {
+  0% {
+    color: #333;
   }
-
-
-  /* animacion */
-  @keyframes cambiar_color {
-    0% {color: #333;}
-   15% {color: rgb(121, 77, 241);}
-   25% {color: rgb(102, 153, 211);}
-   35% {color: darkmagenta}
-   50% {color: #bcbe35;}
-   75% {color: rgb(211, 25, 25);}
-   100%{color: #333;}
-
+  15% {
+    color: rgb(121, 77, 241);
+  }
+  25% {
+    color: rgb(102, 153, 211);
+  }
+  35% {
+    color: darkmagenta;
+  }
+  50% {
+    color: #bcbe35;
+  }
+  75% {
+    color: rgb(211, 25, 25);
+  }
+  100% {
+    color: #333;
+  }
 }
 @keyframes cambiar_color2 {
-  0% {color: white;}
- 15% {color: #bdc3c7;}
- 25% {color: #27ae60;}
- 35% {color: #34495e;}
- 50% {color: #2c3e50;}
- 75% {color: #1abc9c;}
- 100%{color: white;}
-
+  0% {
+    color: white;
+  }
+  15% {
+    color: #bdc3c7;
+  }
+  25% {
+    color: #27ae60;
+  }
+  35% {
+    color: #34495e;
+  }
+  50% {
+    color: #2c3e50;
+  }
+  75% {
+    color: #1abc9c;
+  }
+  100% {
+    color: white;
+  }
 }
-
-
 
 /* MUSICA MAIN */
 
 #music {
-  background-image: url('../img/tour-bg.png');
+  background-image: url("../img/tour-bg.png");
   background-attachment: inherit;
   background-position: center;
   background-size: cover;
@@ -200,14 +214,13 @@ p {
   color: #333;
   font-size: 3rem;
   line-height: 1.4em;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   margin: 2%;
   padding: 2%;
   text-align: center;
 }
 
 .musicpic {
- 
   text-align: center;
   float: left;
   position: relative;
@@ -219,33 +232,27 @@ p {
   justify-content: center;
 }
 
-.musicpic img{
-  
-  height: 650px
+.musicpic img {
+  height: 650px;
 }
 
-
-
 .musicaadiv {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: relative;
-
-  
 }
 
 .musicaa {
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   text-align: center;
   color: #333;
   text-decoration: none;
-  padding: 0 7px; 
+  padding: 0 7px;
   transition: all 0.4s linear;
   animation-name: cambiar_color;
   animation-duration: 3s;
@@ -256,14 +263,11 @@ p {
   display: inline-block;
   height: 45px;
   line-height: 45px;
-  
 }
 
 .musicaa:hover {
-color: brown;
-background-color: #9ea5aa;
-
-
+  color: brown;
+  background-color: #9ea5aa;
 }
 
 #spotylist {
@@ -281,15 +285,13 @@ background-color: #9ea5aa;
 
 .discografia h2 {
   text-align: center;
-  
 }
 
 .disccontain {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-
-}  
+}
 .maincontainer {
   perspective: 1000px;
   position: relative;
@@ -299,7 +301,6 @@ background-color: #9ea5aa;
   margin: 1%;
   display: flex;
   z-index: 1;
-
 }
 
 .thecard:hover {
@@ -312,17 +313,15 @@ background-color: #9ea5aa;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 1.5s ease;
-  
-  
 }
 
 .front img {
-  width:100%;
+  width: 100%;
   height: 100%;
-  
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -336,21 +335,18 @@ background-color: #9ea5aa;
 
 .back {
   transform: rotateY(180deg);
-  
 }
 
 .backconta {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1em;
   color: brown;
   text-align: center;
   padding-top: 6rem;
-  
 }
 .back ul {
- 
   padding-top: 10%;
 }
 .back ul li {
@@ -360,7 +356,7 @@ background-color: #9ea5aa;
 .sm {
   padding: 0;
 }
-.sm a{
+.sm a {
   display: inline-flex;
   width: 50px;
   height: 50px;
@@ -372,7 +368,7 @@ background-color: #9ea5aa;
   border-radius: 50%;
   text-decoration: none;
 }
-.sm a:hover{
+.sm a:hover {
   background: #2c3e50;
   color: white;
 }
@@ -380,33 +376,32 @@ background-color: #9ea5aa;
 /* BIOGRAFIA MAIN */
 
 .biosec {
-  background-image: url('../img/kanebiomain.png');
+  background-image: url("../img/kanebiomain.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-
 }
 
 #about {
-  margin:0;
+  margin: 0;
   padding: 50px;
   height: auto;
   width: 100%;
-  display:flex;
+  display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
- }
+}
 
 .biosec h2 {
   color: black;
   font-size: 3rem;
   line-height: 1.4em;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   margin: 2%;
-  padding: 1% ;
+  padding: 1%;
   text-align: center;
 }
 
@@ -417,7 +412,7 @@ background-color: #9ea5aa;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   padding: 15px;
   margin: 15px;
   background: #d5d7d8;
@@ -427,19 +422,18 @@ background-color: #9ea5aa;
   min-width: 15%;
 }
 
-
 #about div a:hover {
-color: brown;
-background-color: #d4d4d4a6;
-border: solid 2px whitesmoke;
-transition: all 0.4s linear;
-border-radius: 35px;
+  color: brown;
+  background-color: #d4d4d4a6;
+  border: solid 2px whitesmoke;
+  transition: all 0.4s linear;
+  border-radius: 35px;
 }
 
 .biop {
   position: top;
   font-weight: 400;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   line-height: 180%;
   font-size: 1.2rem;
   text-align: left;
@@ -449,9 +443,7 @@ border-radius: 35px;
   background-color: rgba(255, 255, 255, 0.329);
   text-indent: 3em;
   width: 80%;
-  
 }
-
 
 /* VIDEOS MAIN */
 #Video {
@@ -462,15 +454,12 @@ border-radius: 35px;
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 7%;
-  
-  
-  
 }
 #Video h2 {
   color: white;
   font-size: 3rem;
   line-height: 1.4em;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   margin: 1%;
   padding: 1%;
   text-align: center;
@@ -505,14 +494,13 @@ border-radius: 35px;
 }
 
 .videodiva {
-    text-align: center;
-    margin: 2rem;
-    margin-bottom: 0;
-    padding: 2rem;
-    position: relative;
-    bottom: 50px;
-  }
-
+  text-align: center;
+  margin: 2rem;
+  margin-bottom: 0;
+  padding: 2rem;
+  position: relative;
+  bottom: 50px;
+}
 
 /* ESTILOS SECTION GALERIA MAIN */
 
@@ -524,7 +512,6 @@ border-radius: 35px;
 .gall div ul li {
   display: inline-block;
   width: 20%;
-  
 }
 
 .gall div ul li img {
@@ -548,7 +535,7 @@ border-radius: 35px;
   color: whitesmoke;
   margin: 2rem;
   padding: 2rem;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .galdiva {
@@ -556,14 +543,13 @@ border-radius: 35px;
   margin: 2rem;
   margin-bottom: 0;
   padding: 2rem;
-
 }
 
 .galmaina {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   line-height: 200%;
   font-size: 1.5rem;
   color: white;
@@ -575,13 +561,12 @@ border-radius: 35px;
 
 .galmaina:hover {
   color: brown;
-background-color: #d4d4d4a6;
-transition: all 0.4s linear;
-border: 2px solid #d4d4d4a6;
-border-radius: 30px;
-width: auto;
+  background-color: #d4d4d4a6;
+  transition: all 0.4s linear;
+  border: 2px solid #d4d4d4a6;
+  border-radius: 30px;
+  width: auto;
 }
-
 
 /* FOOTER */
 
@@ -591,11 +576,10 @@ width: auto;
   text-align: center;
   font-size: 0.8rem;
   text-transform: uppercase;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   font-weight: 700;
   display: inline-block;
   width: 100%;
-  
 }
 
 .terms {
@@ -605,7 +589,7 @@ width: auto;
   text-align: center;
   font-size: 0.8rem;
   text-transform: uppercase;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   font-weight: 700;
   display: inline-block;
   width: 100%;
@@ -616,12 +600,11 @@ width: auto;
   transition: all 0.4s linear;
 }
 
-
 .footera {
- margin-left: 1%;
- letter-spacing: 3px;
- font-size: 2rem;
- color: white;
+  margin-left: 1%;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  color: white;
 }
 
 .footera:hover {
@@ -633,7 +616,6 @@ width: auto;
   display: inline-block;
 }
 
-
 footer a {
   color: white;
   text-decoration: none;
@@ -641,7 +623,7 @@ footer a {
 
 .footerli {
   display: inline-block;
-  padding-left: 10px
+  padding-left: 10px;
 }
 
 .footerli li {
@@ -650,14 +632,13 @@ footer a {
   letter-spacing: 3px;
 }
 
-
 /* formulario */
 .form {
   color: black;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   background: white;
   font-size: 1.1rem;
 }
@@ -676,7 +657,9 @@ fieldset {
   font-size: 1.2rem;
 }
 
-.nombre,.email,.subject {
+.nombre,
+.email,
+.subject {
   width: 18%;
   height: 2rem;
   margin: 0.5%;
@@ -699,7 +682,8 @@ select {
   margin-bottom: 1rem;
 }
 
-.send, .reset {
+.send,
+.reset {
   font-size: 0.9rem;
   text-transform: uppercase;
   height: 2rem;
@@ -708,92 +692,90 @@ select {
   margin: 0.5%;
 }
 
-
 /* /* socialbar */
 
 .social-bar {
-	position: fixed;
-	left: 0;
-	top: 45vh;
-	font-size: 1.5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	z-index: 1;
-} 
+  position: fixed;
+  left: 0;
+  top: 45vh;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+}
 
+.social-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
- .social-bar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-} 
-
- .icon {
-	color: white;
-	text-decoration: none;
-	padding: .5rem;
-	display: flex;
-	transition: all .5s;
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: flex;
+  transition: all 0.5s;
 }
 
 .icon-facebook {
-	background: #2E406E;
+  background: #2e406e;
 }
 
 .icon-twitter {
-	background: #339DC5;
+  background: #339dc5;
 }
 
 .icon-youtube {
-	background: #E83028;
+  background: #e83028;
 }
 
 .icon-instagram {
-	background: #b6384f;
+  background: #b6384f;
 }
 
 .icon:first-child {
-	border-radius: 0 1rem 0 0;
+  border-radius: 0 1rem 0 0;
 }
 
 .icon:last-child {
-	border-radius: 0 0 1rem 0;
+  border-radius: 0 0 1rem 0;
 }
 
 .icon:hover {
-	padding-left: 3rem;
-	border-radius: 0 1rem 1rem 0;
-	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
-	
-} 
+  padding-left: 3rem;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+}
 
-.gotopbtn, .gotopbtnbio {
+.gotopbtn,
+.gotopbtnbio {
   position: fixed;
   width: 45px;
   height: 45px;
   bottom: 100px;
   right: 28px;
-  background:#9b2e2e7a;
+  background: #9b2e2e7a;
   text-decoration: none;
   text-align: center;
   line-height: 45px;
   color: white;
   font-size: 22px;
   border-radius: 15px;
- 
 }
-.gotopbtn, .gotopbtnbio:hover {
+.gotopbtn,
+.gotopbtnbio:hover {
   transition: all 0.4s linear;
-  background:#9b2e2efd;
-  border:2px solid #0f2e40;
+  background: #9b2e2efd;
+  border: 2px solid #0f2e40;
   box-sizing: content-box;
 }
 
 /* CONTACT HTML */
 
 .bodyc {
-  background-image: url('../img/contact2.jpg');
+  background-image: url("../img/contact2.jpg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: 30%;
@@ -803,12 +785,12 @@ select {
 }
 
 .formc {
-  padding:5%;
+  padding: 5%;
   color: black;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   background: transparent;
   font-size: 1.1rem;
 }
@@ -818,7 +800,7 @@ select {
 }
 
 /* GALERIA HTML */
-.galul{
+.galul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -831,9 +813,9 @@ select {
 .galul li img {
   width: 100%;
   height: auto;
--webkit-box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75);
-box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
+  -webkit-box-shadow: -1px 0px 13px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 13px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 13px 1px rgba(0, 0, 0, 0.75);
 }
 .galdiv {
   text-align: center;
@@ -849,7 +831,7 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
   text-align: center;
   font-size: 0.8rem;
   text-transform: uppercase;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   font-weight: 700;
   display: inline-block;
   width: 100%;
@@ -880,7 +862,6 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
   color: brown;
 }
 
-
 /* ESTILOS BIO.HTML */
 .biosection {
   display: flex;
@@ -890,7 +871,7 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
 
 .biophtml {
   font-weight: 400;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   line-height: 150%;
   font-size: 1.2rem;
   color: black;
@@ -898,7 +879,6 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
   padding: 15px 60px;
   text-indent: 3em;
   text-align: justify;
-  
 }
 
 .h2bio1 {
@@ -926,7 +906,6 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
   text-align: center;
   margin: 2%;
   position: relative;
-  
 }
 .biobtna {
   text-align: center;
@@ -950,225 +929,225 @@ box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.75)
 }
 
 /*-------- RESPONSIVE DESIGN---------- */
-@media screen and (max-width:768px){
-
+@media screen and (max-width: 768px) {
   .header {
     text-align: center;
   }
 
   .logo-nav-container {
-  display: block;
-  width: 100%;
-  margin: 0;
-}
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
 
-.homenavi img {
-  margin: 2px 5%;
-}
+  .homenavi img {
+    margin: 2px 5%;
+  }
 
-.navigation ul li {
-  margin: 0 0.4rem;
-}
-.navigation ul li a {
-  padding: 0.3rem 0.2rem;
-  font-size: 15px
-}
-  
-/* FIN HEADER */
+  .navigation ul li {
+    margin: 0 0.4rem;
+  }
+  .navigation ul li a {
+    padding: 0.3rem 0.2rem;
+    font-size: 15px;
+  }
 
-/* SOCIAL BAR */
-.social-bar {
-  display: none;
-}
-/* EMPIEZA MAIN */
-.main {
-  padding-top: 130px;
-}
-/* ----TOUR---- */
-#tour div img {
-  width: 100%;
-}
-.ticketsmain {
-  font-size: 1.3rem;
-}
+  /* FIN HEADER */
 
-/* -----MUSIC----- */
-#music {
-  margin-top: 0;
-}
+  /* SOCIAL BAR */
+  .social-bar {
+    display: none;
+  }
+  /* EMPIEZA MAIN */
+  .main {
+    padding-top: 130px;
+  }
+  /* ----TOUR---- */
+  #tour div img {
+    width: 100%;
+  }
+  .ticketsmain {
+    font-size: 1.3rem;
+  }
 
-#music h2 {
-  font-size: 2rem;
-}
-.musicpic {
-  display: none;
-}
+  /* -----MUSIC----- */
+  #music {
+    margin-top: 0;
+  }
 
-.musicaadiv iframe{
-  width: 250px;
-  height: 300px;
-}
-.musicaadiv a {
-  font-size: 1.1rem;
-}
+  #music h2 {
+    font-size: 2rem;
+  }
+  .musicpic {
+    display: none;
+  }
 
-.disccontain {
-  display: block;
-}
-.maincontainer {
-  margin:10px auto;
-  width: 200px;
-  height: 200px;
-}
-.back {
-  font-size: 0.7em;
-}
-.backconta {
-padding-top: 3rem;
-font-size: 1em;
-}
- .sm a {
-   font-size: 1em;
- }
-/* FIN MUSIC MAIN */
+  .musicaadiv iframe {
+    width: 250px;
+    height: 300px;
+  }
+  .musicaadiv a {
+    font-size: 1.1rem;
+  }
 
-/* ABOUT MAIN */
-.biosec h2 {
-  font-size: 2rem;
-}
+  .disccontain {
+    display: block;
+  }
+  .maincontainer {
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+  }
+  .back {
+    font-size: 0.7em;
+  }
+  .backconta {
+    padding-top: 3rem;
+    font-size: 1em;
+  }
+  .sm a {
+    font-size: 1em;
+  }
+  /* FIN MUSIC MAIN */
 
-#about {
-  padding: 0;
-  margin: auto;
-}
-.biop {
-  
-  overflow: hidden;
-  font-size: 0.9rem;
-}
-/* FIN ABOUT  */
+  /* ABOUT MAIN */
+  .biosec h2 {
+    font-size: 2rem;
+  }
 
-/* EMPIEZA VIDEOS MAIN */
-#Video h2 {
-  font-size: 2rem;
-}
+  #about {
+    padding: 0;
+    margin: auto;
+  }
+  .biop {
+    overflow: hidden;
+    font-size: 0.9rem;
+  }
+  /* FIN ABOUT  */
 
-#Video ul .primero {
-display: none;
- }
+  /* EMPIEZA VIDEOS MAIN */
+  #Video h2 {
+    font-size: 2rem;
+  }
 
-#Video ul li {
-  width: 90%;
-}
+  #Video ul .primero {
+    display: none;
+  }
 
-.videodiva {
-  margin: auto;
-}
-.galmaina {
-  font-size: 1rem;
-  width: 100%;
-}
+  #Video ul li {
+    width: 90%;
+  }
 
-/* GALLERY MAIN */
-.gall h2 {
-font-size: 2em;
-}
- .gall div ul li {
-   display: block;
-   width: auto;
- }
+  .videodiva {
+    margin: auto;
+  }
+  .galmaina {
+    font-size: 1rem;
+    width: 100%;
+  }
 
- /* FORM */
- .form {
-   display: none;
- }
+  /* GALLERY MAIN */
+  .gall h2 {
+    font-size: 2em;
+  }
+  .gall div ul li {
+    display: block;
+    width: auto;
+  }
 
- /* ------GALERIA HTML */
+  /* FORM */
+  .form {
+    display: none;
+  }
 
- .galul {
+  /* ------GALERIA HTML */
+
+  .galul {
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
- }
- .galul li {
-   width: 50%;
- }
- .gotopbtn {
-  position: fixed;
-  width: 42px;
-  height: 42px;
-  bottom: 200px;
-  right: 25px;
-  background:#9b2e2e7a;
-  text-decoration: none;
-  text-align: center;
-  line-height: 42px;
-  color: white;
-  font-size: 20px;
-  border-radius: 15px;
- 
-}
-/* ------BIOHTML------ */
- .biosection {
-   background: #fff;
- }
+  }
+  .galul li {
+    width: 50%;
+  }
+  .gotopbtn {
+    position: fixed;
+    width: 42px;
+    height: 42px;
+    bottom: 200px;
+    right: 25px;
+    background: #9b2e2e7a;
+    text-decoration: none;
+    text-align: center;
+    line-height: 42px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  /* ------BIOHTML------ */
+  .biosection {
+    background: #fff;
+  }
 
- .h2bio {
- font-size: 1.1rem;
-}
-.biophtml {
-  font-weight: 400;
-  font-family: 'Noto Sans', sans-serif;
-  line-height: 130%;
-  font-size: 0.9rem;
-  color: black;
-  margin: 8px 0.9em;
-  padding: 7px 30px;
-  text-indent: 1em;
-  text-align: justify;
-  
-}
-.gotopbtnbio { 
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  bottom: 200px;
-  right: 10px;
-  background:#9b2e2e7a;
-  text-decoration: none;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-  font-size: 18px;
-  border-radius: 10px;
-}
+  .h2bio {
+    font-size: 1.1rem;
+  }
+  .biophtml {
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+    line-height: 130%;
+    font-size: 0.9rem;
+    color: black;
+    margin: 8px 0.9em;
+    padding: 7px 30px;
+    text-indent: 1em;
+    text-align: justify;
+  }
+  .gotopbtnbio {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 200px;
+    right: 10px;
+    background: #9b2e2e7a;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+  }
 
-/* -----CONTACT HTML------ */
-.bodyc {
-  background-size: 25%;
-  background-position-x: 1%;
-  background-position-y: 40%;
-}
- textarea {
-   width: 90%;
- }
-fieldset {
-  font-size: 1rem;
-}
-.nombre, .email, .subject, .suscribe, .tyc {
-  font-size: 0.8rem;
-}
+  /* -----CONTACT HTML------ */
+  .bodyc {
+    background-size: 25%;
+    background-position-x: 1%;
+    background-position-y: 40%;
+  }
+  textarea {
+    width: 90%;
+  }
+  fieldset {
+    font-size: 1rem;
+  }
+  .nombre,
+  .email,
+  .subject,
+  .suscribe,
+  .tyc {
+    font-size: 0.8rem;
+  }
 
- .contact {
-   display: block;
-   font-size: 1.5rem;
- }
- .select {
-   font-size: 1rem;
- }
- .send, .reset {
-   min-width: 30%;
-   padding: 0;
- }
-
+  .contact {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .select {
+    font-size: 1rem;
+  }
+  .send,
+  .reset {
+    min-width: 30%;
+    padding: 0;
+  }
 }
