@@ -56,10 +56,12 @@ p {
   width: 90%;
   margin: auto;
 }
-
+.homenavi img {
+  transition: all 0.6s linear;
+}
 .homenavi img:hover {
   transform: scale(1.1, 1.1);
-  transition: all 0.6s linear;
+  
 }
 
 .navigation ul {
@@ -524,7 +526,7 @@ p {
   padding: 2rem 2rem;
   background-image: url("./../img/fondogalmain.png");
   background-attachment: fixed;
-  background-position: top;
+  background-position: left center;
   background-size: cover;
   text-align: center;
 }
@@ -633,63 +635,31 @@ footer a {
 }
 
 /* formulario */
-.form {
-  color: black;
+
+.form-check {
+  display: inline-block;
+  font-size: 16px;
+  padding-right: 3px; 
+}
+
+
+.modal-content {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.send-reset-div {
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-family: "Noto Sans";
-  background: white;
-  font-size: 1.1rem;
-}
-
-fieldset {
-  margin: 3rem;
-  border: 0;
-}
-.contact {
-  width: auto;
-  height: 2rem;
-  margin: 1%;
-  font-weight: 700;
-  text-align: top;
-  border: 0;
-  font-size: 1.2rem;
-}
-
-.nombre,
-.email,
-.subject {
-  width: 18%;
-  height: 2rem;
-  margin: 0.5%;
-  padding: 1%;
-  text-align: top;
-  border: 0;
-  border-bottom: 1.4px black solid;
-  font-size: 1rem;
-}
-
-select {
-  background: transparent;
-  font-size: 1rem;
-  height: 2rem;
-  padding: 5px;
-  width: auto;
-}
-
-.select {
-  margin-bottom: 1rem;
 }
 
 .send,
 .reset {
   font-size: 0.9rem;
   text-transform: uppercase;
-  height: 2rem;
-  padding: 5px;
-  width: 8%;
-  margin: 0.5%;
+  text-align: center;
+  padding: 6px;
+  width: 13%;
+  
 }
 
 /* /* socialbar */
@@ -712,7 +682,7 @@ select {
 }
 
 .icon {
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 0.5rem;
   display: flex;
@@ -744,6 +714,8 @@ select {
 }
 
 .icon:hover {
+  color: #f4f4f4;
+  text-decoration: none;
   padding-left: 3rem;
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
@@ -764,39 +736,12 @@ select {
   font-size: 22px;
   border-radius: 15px;
 }
-.gotopbtn,
+.gotopbtn:hover,
 .gotopbtnbio:hover {
   transition: all 0.4s linear;
   background: #9b2e2efd;
   border: 2px solid #0f2e40;
   box-sizing: content-box;
-}
-
-/* CONTACT HTML */
-
-.bodyc {
-  background-image: url("../img/contact2.jpg");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 30%;
-  background-position-x: 2%;
-  width: 100%;
-  height: auto;
-}
-
-.formc {
-  padding: 5%;
-  color: black;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: "Noto Sans";
-  background: transparent;
-  font-size: 1.1rem;
-}
-
-.contact {
-  font-size: 2rem;
 }
 
 /* GALERIA HTML */
@@ -928,6 +873,8 @@ select {
   color: brown;
 }
 
+
+
 /*-------- RESPONSIVE DESIGN---------- */
 @media screen and (max-width: 768px) {
   .header {
@@ -949,7 +896,7 @@ select {
   }
   .navigation ul li a {
     padding: 0.3rem 0.2rem;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   /* FIN HEADER */
@@ -1011,6 +958,10 @@ select {
   /* FIN MUSIC MAIN */
 
   /* ABOUT MAIN */
+
+  .biosec {
+    background-position: left center;
+  }
   .biosec h2 {
     font-size: 2rem;
   }
@@ -1064,7 +1015,9 @@ select {
   }
 
   /* ------GALERIA HTML */
-
+.gall {
+  background-position:center;
+}
   .galul {
     flex-flow: column wrap;
     justify-content: space-around;
@@ -1121,36 +1074,4 @@ select {
     border-radius: 10px;
   }
 
-  /* -----CONTACT HTML------ */
-  .bodyc {
-    background-size: 25%;
-    background-position-x: 1%;
-    background-position-y: 40%;
-  }
-  textarea {
-    width: 90%;
-  }
-  fieldset {
-    font-size: 1rem;
-  }
-  .nombre,
-  .email,
-  .subject,
-  .suscribe,
-  .tyc {
-    font-size: 0.8rem;
-  }
-
-  .contact {
-    display: block;
-    font-size: 1.5rem;
-  }
-  .select {
-    font-size: 1rem;
-  }
-  .send,
-  .reset {
-    min-width: 30%;
-    padding: 0;
-  }
 }
